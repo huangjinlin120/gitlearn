@@ -1,0 +1,26 @@
+https://www.cnblogs.com/huximing/p/6164211.html 地址： cookie.js
+http://mazhaoyang.cn/index.php/Home/ArticleList/ArticleArticle/sid/49/aid/162.html  地址：express res的用法
+https://www.csdn.net/gather_2d/MtTaAg0sMDk0MC1ibG9n.html地址：vue循环给a标签href赋值
+https://blog.csdn.net/qq_39537939/article/details/80560782地址：判断购物车内是否有东西
+https://blog.csdn.net/tangxiujiang/article/details/80195106地址：增加与删除购物车中购买物品的数量
+https://www.jianshu.com/p/41eb0cd0b8a2地址：以对象的形式增删数量
+https://blog.csdn.net/qq_40292164/article/details/82018719 地址：全选的原理
+https://blog.csdn.net/qq_24612793/article/details/81199756 地址：购物车大全
+https://blog.csdn.net/xujingzhong0077/article/details/79550019 地址：微信支付
+https://zhidao.baidu.com/question/1958802778300651060.html 地址：在js中，为什么!0是true，!!0是false，!1是false，!!1是true，!-1是false，!!-1是true
+https://www.cnblogs.com/liluping860122/p/3539291.html 地址：JS中的！=、== 、！==、===的用法和区别。
+https://blog.csdn.net/Fabulous1111/article/details/78848971 地址：scroll滑动组件
+https://blog.csdn.net/skyblacktoday/article/details/80534105 地址: 下拉 上拉加载，下拉刷新
+https://www.cnblogs.com/az96/p/6628456.html   地址:制作对话
+http://jsbin.com/ceqifo/1/edit?js,output 地址：Vue.js实现文章评论和回复评论功能
+https://blog.csdn.net/h1lin0010/article/details/80626312 地址：Vue.js实现文章评论和回复评论功能
+https://blog.csdn.net/Aimee1608/article/details/79152702 地址：点击选区表情包
+https://blog.csdn.net/caseywei/article/details/83053796 地址：Vue:在Vue中实现微信网页授权和分享
+https://cloud.tencent.com/developer/article/1119667 地址：Vue:在Vue中实现微信网页授权和分享
+https://www.cnblogs.com/zhengweijie/p/6902957.html 地址：vue图片上传
+http://www.php.cn/js-tutorial-400267.html  地址：图片裁剪
+https://www.cnblogs.com/zyg316/p/5763196.html 地址：JQUERY 简单的文字超出部分隐藏下拉显示
+https://blog.csdn.net/oXieShou/article/details/12053559 地址：文本超出隐藏，关闭展开
+http://www.cnblogs.com/cxk1995/p/5800196.html   地址：git的使用上传GitHub
+https://blog.csdn.net/weixin_42614080/article/details/88957860  Git的基础命令的使用
+http://www.17sucai.com/pins/tag/4670.html         jQuery实例代码预览
