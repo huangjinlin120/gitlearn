@@ -1,0 +1,40 @@
+{
+	"code": 0,
+	"data": {
+		"slider": [
+			{
+				"linkUrl": "https://y.qq.com/m/digitalbum/gold/index.html?openinqqmusic=1&_video=true&mid=000ADcn52UzdWj&g_f=shoujijiaodian",
+				"picUrl": "http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1400335.jpg",
+				"id": 21621
+			}, {
+				"linkUrl": "http://y.qq.com/w/album.html?albummid=000lI5Q12S7wYW",
+				"picUrl": "http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1402841.jpg",
+				"id": 21646
+			}, {
+				"linkUrl": "https://y.qq.com/m/digitalbum/gold/index.html?openinqqmusic=1&_video=true&mid=004M8HLn4QOyyn&g_f=shoujijiaodian",
+				"picUrl": "http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1402820.jpg",
+				"id": 21641
+			}, {
+				"linkUrl": "http://y.qq.com/w/album.html?albummid=001LeBD03pfe9X",
+				"picUrl": "http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1402887.jpg",
+				"id": 21652
+			}, {
+				"linkUrl": "http://y.qq.com/w/album.html?albummid=003RVsa920UiNo",
+				"picUrl": "http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1399395.jpg",
+				"id": 21626
+			}
+		],
+		"radioList": [
+			{
+				"picUrl": "http://y.gtimg.cn/music/photo/radio/track_radio_199_13_1.jpg",
+				"Ftitle": "热歌",
+				"radioid": 199
+			}, {
+				"picUrl": "http://y.gtimg.cn/music/photo/radio/track_radio_307_13_1.jpg",
+				"Ftitle": "一人一首招牌歌",
+				"radioid": 307
+			}
+		],
+		"songList": []
+	}
+}
