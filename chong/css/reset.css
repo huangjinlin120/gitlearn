@@ -1,0 +1,44 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px; }
+h1, h2, h3, h4, h5, h6{ font-size:65.5%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+#app,html,body{width: 100%; height: 100%; font-family: PingFang SC;-webkit-overflow-scrolling : touch;}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1087746 */
+  src: url('//at.alicdn.com/t/font_1087746_8ltpp5zov29.eot');
+  src: url('//at.alicdn.com/t/font_1087746_8ltpp5zov29.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1087746_8ltpp5zov29.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1087746_8ltpp5zov29.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1087746_8ltpp5zov29.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1087746_8ltpp5zov29.svg#iconfont') format('svg');
+}
+a{
+	color: rgba(51, 51, 51, 1);
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar{
+width: 0; height: 0;}

@@ -1,0 +1,38 @@
+.menu {
+    width: 280px;
+    height: 100%;
+    background: #2c2e2f;
+}
+
+.menu-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+    overflow: hidden;
+}
+
+.menu-logo {
+    padding: 19px 45px;
+    border-bottom: 1px solid #313437;
+}
+
+#app {
+    display: flex;
+}
+
+.main-menu {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.main-menu li span{
+    color: #979898;
+}
+.main-menu li{
+    line-height: 45px;
+    border-bottom: 1px solid #313437;
+}

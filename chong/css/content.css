@@ -1,0 +1,15 @@
+.content {
+    display: table-cell;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    padding-bottom: 30px;
+    padding-bottom: 0;
+    vertical-align: top;
+    word-break: break-word;
+    width: 100%;
+    -webkit-transition: opacity 100ms ease-in-out;
+    -moz-transition: opacity 100ms ease-in-out;
+    -o-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+}
