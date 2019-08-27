@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+	<script src="./static/js/rem.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!-- <script src="./static/js/jquery-3.3.1.min.js"></script> -->
+	<title>工作台</title>
+</head>
+
+<body>
+	<div id="app">
+		<div class="xs-workbench-header">
+			<div class="xs-workbench-index">
+				工作台
+			</div>
+		</div>
+		<div class="xs-workbench-container">
+			<div class="workbench-report container">
+				<div class="container_left">
+					<span class="title">汇报工作</span>
+					<img src="static/images/rightsanjiao.svg" class="rightsanjiao"/>
+					<div class="derction">
+						一切没有产出的努力都是浪费资源
+					</div>
+				</div>
+				<div class="container_right">
+					<img src="static/images/report.png"/>
+				</div>
+			</div>
+			<div class="workbench-clientVisit container">
+				<div class="container_left">
+					<span class="title">客户拜访</span>
+					<img src="static/images/rightsanjiao.svg" class="rightsanjiao"/>
+					<div class="derction">
+						推进项目进展，维护市场关系
+					</div>
+				</div>
+				<div class="container_right">
+					<img src="static/images/clientvisit.png"/>
+				</div>
+			</div>
+			<div class="workbench-myClient container">
+				<div class="container_left">
+					<span class="title">我的客户</span>
+					<img src="static/images/rightsanjiao.svg" class="rightsanjiao"/>
+					<div class="derction">
+						真实了解客户，做到有的放矢
+					</div>
+				</div>
+				<div class="container_right">
+					<img src="static/images/myclient.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="xs-workbench-tabBar">
+			<div class="tabBar">
+				<a href="#">
+					<img src="static/images/worktab.png"/>
+					<p>工作台</p>
+				</a>
+			</div>
+			<div class="tabBar">
+				<a href="profile.html">
+					<img src="static/images/profile.png"/>
+					<p>个人中心</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	var app = new Vue({
+		el: '#app',
+		data: {
+			
+		},
+		created() {
+			
+		}
+	})
+</script>
+
+</html>

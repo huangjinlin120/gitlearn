@@ -1,0 +1,155 @@
+#app{
+	background: #F8FAFC;
+	position: relative;
+}
+.xs-login-header{
+	height: 13.14rem;
+	background: rgba(162, 162, 162, 1);
+	background-image: url(../images/loginBg.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.xs-login-dl{
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	top: 3.81rem;
+	left: 2.91rem;
+}
+.xs-login-line{
+	width: 5.5rem;
+	height: 0.31rem;
+	background: rgba(255, 255, 255, 1);
+	position: absolute;
+	top: 6.56rem;
+	left: 2.91rem;
+}
+.xs-login-container{
+	width: 20.81rem;
+	height: 17.38rem;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 0.31rem;
+	box-shadow: 0rem 0rem 0.73rem 0rem rgba(199, 218, 238, 0.3);
+	position: absolute;
+	top: 8.66rem;
+	left: 1.27rem;
+}
+.xs-login-container-id{
+	width: 15.79rem;
+	height: 1.88rem;
+	margin: 2.6rem auto;
+	border-bottom: 0.06rem solid rgba(214, 214, 214, 1);
+}
+.xs-login-phoneNum{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	color: rgba(51, 51, 51, 1);   
+	font-family: Microsoft YaHei;
+	font-size: 0.75rem;
+	text-indent: 0.31rem;
+}
+.xs-login-container-password{
+	width: 15.79rem;
+	height: 1.88rem;
+	margin: 2.01rem auto;
+	border-bottom: 0.06rem solid rgba(214, 214, 214, 1);
+}
+.xs-login-pwd{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	color: rgba(51, 51, 51, 1);   
+	font-family: Microsoft YaHei;
+	font-size: 0.75rem;
+	text-indent: 0.31rem;
+}
+.xs-login-submitBtn{
+	width: 6.76rem;
+	height: 3rem;
+	background-color: rgba(24, 144, 255, 1);
+	border-radius: 0.29rem;
+	line-height: 150%;
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+	position: relative;
+	margin-left: 11.63rem;
+}
+.xs-login-submitBtn img{
+	width: 1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	right: 0.83rem;
+	top: 0.75rem;
+}
+.xs-login-submitBtn span{
+	font-size: 1rem;
+	position: absolute;
+	left: 1.25rem;
+	top: 0.76rem;
+}
+.xs-login-container-subtn{
+	margin-top: 3.26rem;
+}
+.toast{
+	width: 12.39rem;
+	height: 2.27rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 0.44rem;
+	margin: 14rem auto;
+	text-align: center;
+}
+.toast span{
+	color: rgba(255, 255, 255, 1);
+	line-height: 2.27rem;
+	font-size: 0.88rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {   
+	 /* WebKit browsers */   
+	color: rgba(51, 51, 51, 1);   
+	font-family: Microsoft YaHei;
+	font-size: 0.75rem;
+	text-indent: 0.31rem;
+}   
+input:-moz-placeholder, textarea:-moz-placeholder {   
+	/* Mozilla Firefox 4 to 18 */   
+	color: rgba(51, 51, 51, 1);   
+	font-family: Microsoft YaHei;
+	font-size: 0.75rem;
+	text-indent: 0.31rem;
+}   
+input::-moz-placeholder, textarea::-moz-placeholder {   
+	 /* Mozilla Firefox 19+ */   
+	color: rgba(51, 51, 51, 1);   
+	font-family: Microsoft YaHei;
+	font-size: 0.75rem;
+	text-indent: 0.31rem;   
+}   
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {   
+ 	/* Internet Explorer 10+ */   
+	color: rgba(51, 51, 51, 1);   
+	font-family: Microsoft YaHei;
+	font-size: 0.75rem;
+	text-indent: 0.31rem; 
+}

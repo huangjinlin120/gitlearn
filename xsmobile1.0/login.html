@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./static/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="static/css/login.css" />
+		<script src="./static/js/rem.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<!-- <script src="./static/js/jquery-3.3.1.min.js"></script> -->
+		<title>登录</title>
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="xs-login-header">
+				<div class="xs-login-dl">
+					登录
+				</div>
+				<div class="xs-login-line"></div>
+			</div>
+			<div class="xs-login-container">
+				<div class="xs-login-container-id">
+					<input type="text" class="xs-login-phoneNum" placeholder="输入手机号" maxlength="11" v-model="phoneNum" />
+				</div>
+				<div class="xs-login-container-password">
+					<input type="password" class="xs-login-pwd" placeholder="输入密码" v-model="password" />
+				</div>
+				<div class="xs-login-container-subtn">
+					<div class="xs-login-submitBtn" @click="subBtn()">
+						<span>登录</span>
+						<img src="static/images/rightjiantou.svg" />
+					</div>
+				</div>
+			</div>
+			<div class="toast" v-show="toast">
+				<span>登录失败，请检查账号密码</span>
+			</div>
+			<div class="toast" v-show="toast2">
+				<span>登录成功</span>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				toast: false,
+				toast2:false,
+				phoneNum: '',
+				password: ''
+			},
+			created() {
+
+			},
+			methods: {
+				subBtn() {
+					if(this.phoneNum == '' || this.password == '') {
+						alert('账号密码不能为空')
+					} else if(this.password.length < 6 || this.password.length > 16) {
+						alert("账号密码不能小于6位或不能大于16位")
+					} else if(this.phoneNum != '123' || this.password != '1234567') {
+						this.toast = true
+						setTimeout(() => {
+							this.toast = false
+						}, 3000)
+					} else {
+						this.toast2 = true
+						setTimeout(() => {
+							this.toast2 = false
+							window.location.href = "index.html"
+						}, 3000)
+					}
+
+				}
+			}
+		})
+	</script>
+
+</html>

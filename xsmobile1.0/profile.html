@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./static/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="static/css/profile.css" />
+		<script src="./static/js/rem.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<!-- <script src="./static/js/jquery-3.3.1.min.js"></script> -->
+		<title>个人中心</title>
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="xs-profile-header">
+				<div class="xs-profile-header-div">
+					<div class="xs-smallInfo">
+						<h2 class="xs-name">曲恒杰</h2>
+						<p class="xs-department xsword">销售部</p>
+						<p class="xs-post xsword">销售代表</p>
+					</div>
+					<div class="xs-headPhoto">
+						恒杰
+						<img src=""/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="xs-profile-funList">
+				<div class="xs-profile-funList-proInfo funList" @click="proSkip()">
+					<img src="static/images/grzl.png" class="ico"/>
+					<span>个人资料</span>
+					<div class="right">
+						<img src="static/images/right.svg"/>
+					</div>
+				</div>
+				<div class="xs-profile-funList-reprotRecord funList">
+					<img src="static/images/hbjl.png" class="ico"/>
+					<span>汇报记录</span>
+					<div class="right">
+						<img src="static/images/right.svg"/>
+					</div>
+				</div>
+				<div class="xs-profile-funList-visitRecord funList">
+					<img src="static/images/bfjl.png" class="ico"/>
+					<span>拜访记录</span>
+					<div class="right">
+						<img src="static/images/right.svg"/>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="xs-profile-tabBar">
+				<div class="tabBar">
+					<a href="index.html">
+						<img src="static/images/pfofiletab.png"/>
+						<p>工作台</p>
+					</a>
+				</div>
+				<div class="tabBar">
+					<a href="#">
+						<img src="static/images/profiletab.png"/>
+						<p>个人中心</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				
+			},
+			created() {
+
+			},
+			methods: {
+				proSkip(){
+					window.location.href = "page/proinfo/proinfo.html"
+				}
+			}
+		})
+	</script>
+
+</html>

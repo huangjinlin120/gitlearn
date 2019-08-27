@@ -1,0 +1,108 @@
+#app{
+	background: #F8FAFC;
+	position: relative;
+}
+.xs-profile-header{
+	padding: 1.23rem 0.56rem 1.27rem 0.69rem;
+}
+.xs-profile-header-div{
+	width: 22.19rem;
+	height: 9.06rem;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0rem 0rem 0.73rem 0rem rgba(199, 218, 238, 0.3);
+	position: relative;
+}
+.xs-profile-funList-proInfo{
+	
+}
+.funList{
+	width: 100%;
+	height: 3rem;
+	background: rgba(255, 255, 255, 1);
+	position: relative;
+}
+.xs-profile-funList-reprotRecord{
+	margin-top: 0.6rem;
+}
+.xs-profile-funList-visitRecord{
+	margin-top: 0.08rem;
+}
+.funList img{
+	width: 1.5rem;
+	height: 1.5rem;
+	display: inline-block;
+}
+.right{
+	position: absolute;
+	right: 0.62rem;
+	top: 0.88rem;
+}
+.ico{
+	position: absolute;
+	left: 0.63rem;
+	top: 0.75rem;
+}
+.funList span{
+	position: absolute;
+	left: 2.75rem;
+	line-height: 3rem;
+	color: rgba(80, 80, 80, 1);
+	font-size: 0.88rem;
+}
+.xs-smallInfo{
+	padding: 1.56rem 0 2.31rem 1.56rem;
+}
+.xs-name{
+	color: rgba(80, 80, 80, 1);
+	font-size: 1.12rem;
+	font-weight: bold;
+}
+.xs-department{
+	margin-top: 0.63rem;
+}
+.xs-post{
+	margin-top: 0.63rem;
+}
+.xsword{
+	font-size: 0.75rem;
+	color: rgba(80, 80, 80, 1);
+}
+.xs-headPhoto{
+	width: 3.12rem;
+	height: 3.12rem;
+	border-radius: 50%;
+	background: rgba(24, 144, 255, 1);
+	position: absolute;
+	right: 1.58rem;
+	top: 1.58rem;
+	text-align: center;
+	line-height: 3.12rem;
+	color: rgba(255, 255, 255, 1);
+	font-size: 0.88rem;
+}
+
+.xs-profile-tabBar{
+	width: 100%;
+	height: 3.12rem;
+	background: rgba(255, 255, 255, 1);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+}
+
+.tabBar img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-top: 0.27rem;
+}
+
+.tabBar{
+	flex: 1;
+	font-size: 0.75rem;
+	text-align: center;
+}
+.tabBar a{
+	text-decoration: none;
+}
+
