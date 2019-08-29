@@ -1,0 +1,118 @@
+#app{
+	background: #F8F8F8;
+}
+.xs-report-top{
+	width: 100%;
+	height: 3.06rem;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	line-height: 3.06rem;
+	font-size: 0.88rem;
+	color: rgba(80, 80, 80, 1);
+	position: relative;
+	border-bottom: 0.07rem solid rgba(80, 80, 80, 1);
+}
+.goback{
+	position: absolute;
+	top: 0.75rem;
+	left: 0.63rem;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.xs-report-title{
+	width: 100%;
+	height: 3.85rem;
+	position: relative;
+}
+.xs-report-title span{
+	line-height: 3.85rem;
+	color: rgba(80, 80, 80, 1);
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-left: 1.35rem;
+	z-index: 99;
+	position: absolute;
+}
+.yuan{
+	width: 1.84rem;
+	height: 1.84rem;
+	border-radius: 50%;
+	background: rgba(24, 144, 255, 1);
+	position: absolute;
+	top: 0.65rem;
+	left: 0.6rem;
+}
+.WorkBox{
+	width: 100%;
+	height: 8.62rem;
+	background: rgba(255, 255, 255, 1);
+	margin-bottom: 0.64rem;
+}
+.WorkBox-div{
+	padding: 0.63rem 0.65rem 0.63rem 0.63rem;
+}
+.WorkBox-div p{
+	font-size: 0.75rem;
+	color: rgba(153, 153, 153, 1);
+}
+.todayWrite{
+	padding-top: 0.62rem;
+	width: 22.16rem;
+	height: 5.62rem;
+}
+.write{
+	width: 100%;
+	height: 100%;
+	color: rgba(102, 102, 102, 1);
+	font-size: 0.88rem;
+	outline: none;
+	border: none;
+	resize:none;
+	font-family:  Microsoft YaHei;
+}
+.xs-report-subdiv{
+	width: 21.24rem;
+	height: 2.93rem;
+	margin: 1.23rem auto;
+}
+.xs-report-subdiv button{
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 1);
+	border: 0;
+	outline: none;
+	font-size: 1rem;
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	border-radius: 0.37rem;
+	box-shadow: rgba(0, 0, 0, 0.2) solid 0.07rem;
+	border: 0.06rem solid rgba(0, 0, 0, 0.2);
+}
+
+.saveSuccess{
+	width: 100%;
+	height: 100%;
+	border-radius: 1.03rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+.saveSuccessBox{
+	width: 6.69rem;
+	height: 6.53rem;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 1.03rem;
+}
+.saveSuccessBox img{
+	width: 2.87rem;
+	height: 2.87rem;
+	margin-top: 1.07rem;
+}
+.saveSuccessBox p{
+	font-size: 0.88rem;
+	color: rgba(255, 255, 255, 1);
+	margin-top: 0.59rem;
+}

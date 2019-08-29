@@ -20,7 +20,7 @@
 			</div>
 		</div>
 		<div class="xs-workbench-container">
-			<div class="workbench-report container">
+			<div class="workbench-report container" @click="report()">
 				<div class="container_left">
 					<span class="title">汇报工作</span>
 					<img src="static/images/rightsanjiao.svg" class="rightsanjiao"/>
@@ -32,7 +32,7 @@
 					<img src="static/images/report.png"/>
 				</div>
 			</div>
-			<div class="workbench-clientVisit container">
+			<div class="workbench-clientVisit container" @click="visit()">
 				<div class="container_left">
 					<span class="title">客户拜访</span>
 					<img src="static/images/rightsanjiao.svg" class="rightsanjiao"/>
@@ -82,6 +82,14 @@
 		},
 		created() {
 			
+		},
+		methods:{
+			report(){
+				window.location.href = "page/report/report.html"
+			},
+			visit(){
+				window.location.href = "page/clientVisit/clientVisit.html"
+			}
 		}
 	})
 </script>

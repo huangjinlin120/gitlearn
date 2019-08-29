@@ -1,0 +1,55 @@
+#app{
+	background: #F8FAFC;
+}
+.xs-email-top{
+	width: 100%;
+	height: 3.06rem;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	line-height: 3.06rem;
+	font-size: 0.88rem;
+	color: rgba(80, 80, 80, 1);
+	position: relative;
+	border-bottom: 0.07rem solid rgba(80, 80, 80, 1);
+}
+.goback{
+	position: absolute;
+	top: 0.75rem;
+	left: 0.63rem;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.xs-email{
+	width: 100%;
+	height: 3rem;
+	background: rgba(255, 255, 255, 1);
+	margin-top: 0.66rem;
+}
+.xs-email-input{
+	padding-top: 0.66rem;
+	padding-left: 0.66rem;
+}
+.xs-email-input input{
+	width: 20.34rem;
+	height: 1.87rem;
+	border: 0;
+	outline: none;
+	color: rgba(153, 153, 153, 1);
+	font-size: 0.75rem;
+}
+.xs-email-subdiv{
+	width: 21.24rem;
+	height: 2.93rem;
+	margin: 7.94rem auto;
+}
+.xs-email-subdiv button{
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 144, 255, 1);
+	border: 0;
+	outline: none;
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+	border-radius: 0.37rem;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../../static/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="choseClient.css" />
+		<script src="../../static/js/rem.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+		<!--<script src="../../static/js/jquery-3.3.1.min.js"></script>-->
+		<title>选择客户</title>
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="xs-client-top">
+				<span>选择客户</span>
+				<img src="../../static/images/left.svg" class="goback" @click="goback()" />
+			</div>
+			<div class="xs-client-searchBox">
+				<div class="xs-client-search">
+					<input type="search" class="xs-search-input" placeholder="搜索" v-model="searchValue"/>
+					<img src="../../static/images/search.svg" class="icosear" v-show="ico"/>
+				</div>
+			</div>
+			
+			<div class="xs-client-listBox">
+				<ul class="xs-client-ul">
+					<li v-for="(data,index) in docList" :key="index" @click="doc(data)">
+						<h2>{{data.doc}}</h2>
+						<p>{{data.hospital}} 丨 {{data.keshi}} </p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				searchValue:'',
+				ico:true,
+				docList:[]
+			},
+			created() {
+				axios.get("../../static/json/doctors.json").then((res)=>{
+					console.log(res.data)
+					this.docList = res.data
+				})
+			},
+			watch:{
+				searchValue:function(){
+					if(this.searchValue != ''){
+						this.ico = false
+					}else{
+						this.ico = true
+					}
+				}
+			},
+			methods: {
+				goback(){
+					window.location.href = "../clientVisit/clientVisit.html"
+				},
+				doc(data){
+					localStorage.setItem("docData",JSON.stringify(data))
+					window.location.href = "../clientVisit/clientVisit.html"
+				}
+			}
+		})
+	</script>
+
+</html>

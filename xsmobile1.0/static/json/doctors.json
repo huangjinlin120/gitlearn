@@ -1,0 +1,35 @@
+[
+	{
+		"id": 1,
+		"doc": "李宏军",
+		"hospital": "北京协和医院",
+		"keshi": "男科",
+		"zhiwei":"主任",
+		"zhicheng":"主任医师",
+		"beizhu":"李教授出诊地点调整至 协和东院，不再在西院出诊。"
+	}, {
+		"id": 2,
+		"doc": "邓姗",
+		"hospital": "北京协和医院",
+		"keshi": "妇科",
+		"zhiwei":"副主任",
+		"zhicheng":"主任医师(资格)",
+		"beizhu":"123"
+	}, {
+		"id": 3,
+		"doc": "王慧春",
+		"hospital": "北京海淀区妇幼保健院",
+		"keshi": "妇产科",
+		"zhiwei":"副主任",
+		"zhicheng":"副主任医师",
+		"beizhu":"456"
+	}, {
+		"id": 4,
+		"doc": "陈升平",
+		"hospital": "北京世纪坛医院",
+		"keshi": "妇产科",
+		"zhiwei":"副主任",
+		"zhicheng":"副主任医师",
+		"beizhu":"789"
+	}
+]

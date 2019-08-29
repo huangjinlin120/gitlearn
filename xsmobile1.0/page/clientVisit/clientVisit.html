@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="../../static/css/animate.css"/>
+		<link rel="stylesheet" href="../../static/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="clientVisit.css" />
+		<script src="../../static/js/rem.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<!--<script src="../../static/js/jquery-3.3.1.min.js"></script>-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.1/lib/index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vant@2.1/lib/vant.min.js"></script>
+		<title>添加汇报</title>
+		<style type="text/css">	
+			[v-cloak] {
+			  display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app" v-cloak>
+			<div class="xs-visit-top">
+				<span>添加拜访</span>
+				<img src="../../static/images/left.svg" class="goback" @click="goback()"/>
+			</div>
+			<div class="xs-visit-title">
+				<div class="yuan"></div>
+				<span>添加拜访</span>
+			</div>
+			<!--选择拜访时间-->
+			<div class="xs-visit dataList" @click="choseTime">
+				<div class="xs-visit-leftbox">
+					<p>选择拜访时间</p>
+				</div>
+				<div class="xs-visit-rightbox">
+					<div class="xs-visit-data">
+						<div class="data" ref="changetime">{{selectTime}}</div>
+						<div class="ico"><img class="rightico" src="../../static/images/right.svg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<!--选择客户-->
+			<div class="xs-visit dataList" @click="choseClient">
+				<div class="xs-visit-leftbox">
+					<p>选择/添加客户</p>
+				</div>
+				<div class="xs-visit-rightbox">
+					<div class="xs-visit-data">
+						<div class="data">{{doctor}}</div>
+						<div class="ico"><img class="rightico" src="../../static/images/right.svg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<!--选择项目-->
+			<div class="xm">
+				<div class="xs-visit dataList " @click="chosXm">
+					<div class="xs-visit-leftbox">
+						<p>选择项目</p>
+					</div>
+					<div class="xs-visit-rightbox">
+						<div class="xs-visit-data">
+							<div class="data">请选择项目</div>
+							<div class="ico"><img class="rightico" src="../../static/images/right.svg" alt="" /></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="xs-visit-xmselect animated fadeInDown"  v-show="sele1" style="height: 3rem;width: 100%;background: #fff; position: absolute; top: 3.5rem;z-index: 99;">
+					<ul @focus="ss" @blur="sj()">
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+					</ul>
+				</div>
+			</div>
+			<div class="line"></div>
+			<!--选择项目-->
+			<div class="xs-visit dataList" @click="">
+				<div class="xs-visit-leftbox">
+					<p>进展情况</p>
+				</div>
+				<div class="xs-visit-rightbox">
+					<div class="xs-visit-data">
+						<div class="data">请选择项目进展情况</div>
+						<div class="ico"><img class="rightico" src="../../static/images/right.svg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="line2"></div>
+			<!--拜访目的-->
+			<div class="WorkBox ">
+				<div class="WorkBox-div" ref="verify">
+					<p>拜访目的</p>
+					<div class="todayWrite">
+						<textarea name="" class="write" placeholder="输入内容" v-model="purpose"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="line2"></div>
+			<!--拜访目的-->
+			<div class="WorkBox ">
+				<div class="WorkBox-div" ref="verify">
+					<p>拜访结果/存在问题</p>
+					<div class="todayWrite">
+						<textarea name="" class="write" placeholder="输入内容" v-model="result"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="line2"></div>
+			<!--拜访目的-->
+			<div class="WorkBox ">
+				<div class="WorkBox-div" ref="verify">
+					<p>下次拜访计划/解决方案</p>
+					<div class="todayWrite">
+						<textarea name="" class="write" placeholder="输入内容" v-model="nextplan"></textarea>
+					</div>
+				</div>
+			</div>
+			
+			<div class="space"></div>
+			<div class="xs-report-subdiv">
+				<button type="button" @click="" ref="subtn" >提交</button>
+			</div>
+			<div class="space"></div>
+			<!--时间选择器-->
+			<div class="timer" v-show="timeselect">
+				<van-datetime-picker
+				  v-model="currentDate"
+				  type="date"
+				  :min-date="minDate"
+				  change="getColumnValue(index)"
+				  @cancel="cancelPicker"
+				  @confirm="confirmPicker"
+				/>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				currentDate: new Date(),
+				minDate: new Date(2012,1,1),
+				timeselect:false,
+				selectTime: '',
+				doctor:'',
+				purpose:'',
+				nextplan:'',
+				result:'',
+				sele1:false
+			},
+			created() {
+				this.$nextTick(function() {
+					this.morenTime()
+					console.log(this.$refs.changetime.innerHTML)
+					console.log(JSON.parse(localStorage.getItem('docData')).doc )
+					this.doctor = JSON.parse(localStorage.getItem('docData')).doc 
+				})
+				
+//				console.log(localStorage.getItem('time'))
+			},
+			watch: {
+	            // 如果 `todayWork` 发生改变，这个函数就会运行
+	            selectTime: function () {
+	              console.log(this.selectTime)
+	             
+	            },
+	            ss:function(){
+	            	console.log('111')
+	            }
+	            
+	       	},
+			methods: {
+				ss(){
+					console.log('111')
+				},
+				sj(){
+					console.log('123')
+					this.sele1 = false
+				},
+				chosXm(){
+					this.sele1 = true
+				},
+				goback(){
+					window.location.href = "../../index.html"
+				},
+				choseTime(){
+					this.timeselect = true
+				},
+//				取消按钮
+				cancelPicker(){
+					this.timeselect = false
+				},
+//				确认按钮
+				confirmPicker(value){
+					var date = value;
+		            var m = date.getMonth() + 1;
+		            var d = date.getDate();
+		            if (m >= 1 && m <= 9) {
+		                m = "0" + m;
+		            }
+		            if (d >= 0 && d <= 9) {
+		                d = "0" + d;
+		            }
+		            var timer = date.getFullYear() + "年" + m + "月" + d + "日"
+					this.selectTime = timer
+					this.timeselect = false
+//					选择到的时间存到本地localstorage里
+					localStorage.setItem('time',timer)
+//					选择到的时间在页面上显示
+					this.$refs.changetime.innerHTML = timer
+				},
+//				页面默认时间   默认当前时间
+				morenTime(){
+					var date = new Date()
+					console.log(date)
+					var m = date.getMonth() + 1;
+		            var d = date.getDate();
+		            if (m >= 1 && m <= 9) {
+		                m = "0" + m;
+		            }
+		            if (d >= 0 && d <= 9) {
+		                d = "0" + d;
+		            }
+		            var timer = date.getFullYear() + "年" + m + "月" + d + "日"
+//		            判断本地里有没有存放时间   防止页面刷新重新回到默认时间
+		            if(localStorage.getItem('time')){
+		            	this.selectTime = localStorage.getItem('time')
+		            }else{
+		            	localStorage.setItem('time',timer)
+		            	this.selectTime = timer
+		            }
+		         
+				},
+				choseClient(){
+					window.location.href = "../choseClient/choseClient.html"
+				}
+			}
+		})
+	</script>
+
+</html>

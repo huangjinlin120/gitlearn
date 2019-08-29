@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="proinfo.css" />
 		<script src="../../static/js/rem.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		 <!--<script src="../../static/js/jquery-3.3.1.min.js"></script>--> 
+		<!--<script src="../../static/js/jquery-3.3.1.min.js"></script>-->
 		<title>个人资料</title>
 	</head>
 
@@ -16,7 +17,92 @@
 		<div id="app">
 			<div class="xs-grinfo-top">
 				<span>个人资料</span>
-				<img src="../../static/images/left.svg" class="goback" onClick="javascript :history.back(-1);"/>
+				<img src="../../static/images/left.svg" class="goback" @click="goback()" />
+			</div>
+			<div class="xs-grinfo-container">
+				<!--姓名-->
+				<div class="xs-grinfo-name dataList">
+					<div class="xs-grinfo-leftbox">
+						<p>姓名</p>
+					</div>
+					<div class="xs-grinfo-rightbox">
+						<div class="xs-grinfo-data">
+							<span class="data">曲恒杰</span>
+						</div>
+					</div>
+				</div>
+				<div class="line"></div>
+				<!--手机号-->
+				<div class="xs-grinfo-name dataList">
+					<div class="xs-grinfo-leftbox">
+						<p>手机号</p>
+					</div>
+					<div class="xs-grinfo-rightbox">
+						<div class="xs-grinfo-data">
+							<span class="data">13126523074</span>
+						</div>
+					</div>
+				</div>
+				<div class="line"></div>
+				<!--邮箱-->
+				<div class="xs-grinfo-name dataList" @click="email()">
+					<div class="xs-grinfo-leftbox">
+						<p>邮箱</p>
+					</div>
+					<div class="xs-grinfo-rightbox">
+						<div class="xs-grinfo-data">
+							<div class="data">13126523074@qq.com </div><div class="ico"><img class="rightico" src="../../static/images/right.svg" alt="" /></div> 
+						</div>
+					</div>
+				</div>
+				<div class="line2"></div>
+				<!--部门-->
+				<div class="xs-grinfo-name dataList">
+					<div class="xs-grinfo-leftbox">
+						<p>部门</p>
+					</div>
+					<div class="xs-grinfo-rightbox">
+						<div class="xs-grinfo-data">
+							<span class="data">销售部</span>
+						</div>
+					</div>
+				</div>
+				<div class="line"></div>
+				<!--岗位-->
+				<div class="xs-grinfo-name dataList">
+					<div class="xs-grinfo-leftbox">
+						<p>岗位</p>
+					</div>
+					<div class="xs-grinfo-rightbox">
+						<div class="xs-grinfo-data">
+							<span class="data">销售代表</span>
+						</div>
+					</div>
+				</div>
+				<div class="line"></div>
+				<!--直属上级-->
+				<div class="xs-grinfo-name dataList">
+					<div class="xs-grinfo-leftbox">
+						<p>直属上级</p>
+					</div>
+					<div class="xs-grinfo-rightbox">
+						<div class="xs-grinfo-data">
+							<span class="data">上级名</span>
+						</div>
+					</div>
+				</div>
+				<div class="line2"></div>
+				<!--修改密码-->
+				<div class="xs-grinfo-name dataList" @click="verify()">
+					<div class="xs-grinfo-leftbox">
+						<p>修改密码</p>
+					</div>
+					<div class="xs-grinfo-rightbox">
+						<div class="xs-grinfo-data">
+							<div class="ico"><img class="rightico" src="../../static/images/right.svg" alt="" /></div> 
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
@@ -25,13 +111,21 @@
 		var app = new Vue({
 			el: '#app',
 			data: {
-				
+
 			},
 			created() {
 
 			},
 			methods: {
-				
+				email(){
+					window.location.href = "../email/email.html"
+				},
+				verify(){
+					window.location.href = "../pwd/verify.html"
+				},
+				goback(){
+					window.location.href = "../../profile.html"
+				}
 			}
 		})
 	</script>

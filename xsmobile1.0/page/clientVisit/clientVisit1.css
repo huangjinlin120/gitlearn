@@ -1,7 +1,7 @@
 #app{
 	background: #F8FAFC;
 }
-.xs-grinfo-top{
+.xs-visit-top{
 	width: 100%;
 	height: 3.06rem;
 	text-align: center;
@@ -19,6 +19,29 @@
 	width: 1.5rem;
 	height: 1.5rem;
 }
+.xs-visit-title{
+	width: 100%;
+	height: 3.85rem;
+	position: relative;
+}
+.xs-visit-title span{
+	line-height: 3.85rem;
+	color: rgba(80, 80, 80, 1);
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-left: 1.35rem;
+	z-index: 99;
+	position: absolute;
+}
+.yuan{
+	width: 1.84rem;
+	height: 1.84rem;
+	border-radius: 50%;
+	background: rgba(24, 144, 255, 1);
+	position: absolute;
+	top: 0.65rem;
+	left: 0.6rem;
+}
 .dataList{
 	width: 100%;
 	height: 3rem;
@@ -28,20 +51,20 @@
 .xs-grinfo-container{
 	margin-top: 0.65rem;
 }
-.xs-grinfo-leftbox{
-	width: 5rem;
+.xs-visit-leftbox{
+	width: 7rem;
 	line-height: 3rem;
 	padding-left: 0.63rem;
 	float: left;
 	font-size: 0.88rem;
 	color: rgba(80, 80, 80, 1);
 }
-.xs-grinfo-rightbox{
+.xs-visit-rightbox{
 	float: left;	
 	font-size: 0.88rem;
 	color: rgba(153, 153, 153, 1);
 }
-.xs-grinfo-data{
+.xs-visit-data{
 	position: absolute;
 	right: 0.62rem;
 	line-height: 3rem;
@@ -50,16 +73,6 @@
 .data{
 	display: inline-block;
 }
-.line{
-	width: 100%;
-	height: 0.07rem;
-	background: #F8FAFC;
-}
-.line2{
-	width: 100%;
-	height: 0.31rem;
-	background: #F8FAFC;
-}
 .rightico{
 	width: 1.5rem;
 	height: 1.5rem;
@@ -67,4 +80,9 @@
 }
 .ico{
 	float: right;
+}
+.timer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
 }
